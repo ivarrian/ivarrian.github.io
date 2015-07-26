@@ -1,0 +1,24 @@
+# Site settings
+title: "Ravi Nair"
+email: ivarrian@gmail.com
+description: "Ramblings of a mad man"
+baseurl: ""
+url: "http://ivarrian.github.io/"
+title_description: "Random ramblings of one man. Mad? Yes. Genius? No. "
+title_image: "http://www.gravatar.com/avatar/d8500b6296fdc9317c2b363d9724bd50?s=400&d=mm"
+github_repository: https://github.com/ivarrian/ivarrian.github.io
+post_limit: 5
+
+# Social usernames/URLs
+github_username:  ivarrian
+linkedin_link: https://au.linkedin.com/in/ivarrian
+
+# Footer
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/ivarrian\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+permalink: pretty
+exclude: [vendor]
