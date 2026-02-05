@@ -1,0 +1,75 @@
+#!/bin/bash
+
+# Jekyll Resume - Quick Setup Script for GitHub Pages
+
+echo "🚀 Jekyll Resume Setup for GitHub Pages"
+echo "========================================"
+echo ""
+
+# Check if we're in a git repository
+if [ ! -d ".git" ]; then
+    echo "❌ This doesn't appear to be a Git repository."
+    echo "Please run this script from your GitHub Pages repository root."
+    echo ""
+    echo "To create a new repository:"
+    echo "1. Create repository: yourusername.github.io on GitHub"
+    echo "2. Clone it: git clone https://github.com/yourusername/yourusername.github.io.git"
+    echo "3. Copy all files from jekyll-resume/ into the repository"
+    echo "4. Run this script again"
+    exit 1
+fi
+
+echo "✅ Git repository detected"
+echo ""
+
+# Check if required files exist
+required_files=("_config.yml" "index.html" "_layouts/default.html" "assets/css/style.css")
+missing_files=()
+
+for file in "${required_files[@]}"; do
+    if [ ! -f "$file" ]; then
+        missing_files+=("$file")
+    fi
+done
+
+if [ ${#missing_files[@]} -ne 0 ]; then
+    echo "❌ Missing required files:"
+    for file in "${missing_files[@]}"; do
+        echo "   - $file"
+    done
+    echo ""
+    echo "Please ensure all files are copied to your repository."
+    exit 1
+fi
+
+echo "✅ All required files present"
+echo ""
+
+# Add all files
+echo "📦 Adding files to git..."
+git add .
+
+# Commit
+echo "💾 Committing changes..."
+git commit -m "Add Jekyll resume template"
+
+# Push
+echo "🚀 Pushing to GitHub..."
+git push origin main || git push origin master
+
+echo ""
+echo "✅ Deployment complete!"
+echo ""
+echo "🌐 Your resume will be available at:"
+echo "   https://yourusername.github.io/"
+echo ""
+echo "⚙️  Configure GitHub Pages:"
+echo "   1. Go to repository Settings → Pages"
+echo "   2. Set Source to 'main' or 'master' branch"
+echo "   3. Click Save"
+echo ""
+echo "📝 Next steps:"
+echo "   1. Edit _config.yml with your information"
+echo "   2. Customize the content"
+echo "   3. Run this script again to deploy updates"
+echo ""
