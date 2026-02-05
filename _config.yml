@@ -1,24 +1,85 @@
 # Site settings
-title: "Ravi Nair"
-email: ivarrian@gmail.com
-description: "Ramblings of a mad man"
-baseurl: ""
-url: "http://ivarrian.github.io/"
-title_description: "Random ramblings of one man. Mad? Yes. Genius? No. "
-title_image: "http://www.gravatar.com/avatar/d8500b6296fdc9317c2b363d9724bd50?s=400&d=mm"
-github_repository: https://github.com/ivarrian/ivarrian.github.io
-post_limit: 5
+name: "Your Name"
+email: "email@example.com"
+phone: "+1 (555) 123-4567"
+linkedin: "https://linkedin.com/in/yourprofile"
+github: "https://github.com/yourusername"
 
-# Social usernames/URLs
-github_username:  ivarrian
-linkedin_link: https://au.linkedin.com/in/ivarrian
+# Professional Summary
+summary: "Senior Software Engineer with 8+ years building scalable cloud infrastructure and backend systems. Specialized in distributed systems, microservices architecture, and DevOps automation. Reduced deployment time by 65% and infrastructure costs by $2M annually through Kubernetes migration and CI/CD pipeline optimization."
 
-# Footer
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/ivarrian\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+# Technical Skills
+technical_skills:
+  - category: "Languages"
+    items: "Python, JavaScript/TypeScript, Java, Go, SQL"
+  - category: "Frameworks & Tools"
+    items: "React, Node.js, Django, Spring Boot, FastAPI, GraphQL"
+  - category: "Cloud & DevOps"
+    items: "AWS (EC2, S3, Lambda, RDS), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions"
+  - category: "Databases"
+    items: "PostgreSQL, MongoDB, Redis, DynamoDB, Elasticsearch"
+  - category: "Other"
+    items: "Microservices, REST APIs, System Design, Agile/Scrum, Git"
+
+# Professional Experience
+experience:
+  - title: "Senior Software Engineer"
+    company: "Tech Company Name"
+    location: "San Francisco, CA"
+    dates: "Jan 2021 – Present"
+    achievements:
+      - "Led migration of monolithic application to microservices architecture using Kubernetes and Docker, reducing deployment time from 4 hours to 15 minutes and improving system reliability to 99.9% uptime"
+      - "Architected and built real-time data processing pipeline handling 50M+ events/day using Kafka, Python, and AWS Lambda, reducing data latency from hours to seconds"
+      - "Implemented automated CI/CD pipelines with GitHub Actions and Terraform, enabling 30+ deployments per week while maintaining zero-downtime releases"
+      - "Optimized database queries and implemented Redis caching strategy, reducing API response times by 70% (from 800ms to 240ms) and cutting AWS costs by $2M annually"
+      - "Mentored team of 4 junior engineers through code reviews, technical design sessions, and pair programming, resulting in 50% faster onboarding and 2 promotions"
+
+  - title: "Software Engineer"
+    company: "Previous Company"
+    location: "Austin, TX"
+    dates: "Jun 2018 – Dec 2020"
+    achievements:
+      - "Built customer-facing dashboard using React and Node.js, serving 100K+ users with 95+ NPS score"
+      - "Developed REST APIs in Python/Django handling 10M+ requests/day with <100ms p99 latency"
+      - "Implemented automated testing suite with 85% code coverage, reducing production bugs by 40%"
+      - "Collaborated with product and design teams in Agile sprints to deliver 15+ features on schedule"
+
+  - title: "Junior Software Engineer"
+    company: "Startup Name"
+    location: "Remote"
+    dates: "Jan 2017 – May 2018"
+    achievements:
+      - "Developed key features for mobile backend API using Node.js and MongoDB, supporting 50K+ daily active users"
+      - "Built internal analytics dashboard for tracking business KPIs, enabling data-driven product decisions"
+      - "Participated in on-call rotation and resolved production incidents within 2-hour SLA"
+
+# Projects
+projects:
+  - name: "Open Source Contributor"
+    link: "https://github.com/yourusername/project"
+    link_text: "GitHub"
+    details:
+      - "Core contributor to popular Python web framework with 50K+ GitHub stars"
+      - "Implemented authentication middleware and WebSocket support, merged 12 PRs"
+
+  - name: "Personal Project: Real-Time Chat Application"
+    details:
+      - "Built scalable chat app using React, Node.js, Socket.io, and Redis, deployed on AWS with Docker"
+      - "Supports 1000+ concurrent connections with end-to-end encryption and message persistence"
+
+# Education
+education:
+  - degree: "Bachelor of Science in Computer Science"
+    university: "University Name"
+    gpa: "3.8/4.0"
+    dates: "Graduated May 2016"
+    coursework: "Data Structures & Algorithms, Distributed Systems, Database Design, Machine Learning"
+
+# Certifications
+certifications:
+  - "AWS Certified Solutions Architect – Associate"
+  - "Certified Kubernetes Administrator (CKA)"
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-permalink: pretty
-exclude: [vendor]
+markdown: kramdown
+theme: minima

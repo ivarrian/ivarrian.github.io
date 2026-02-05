@@ -1,0 +1,114 @@
+---
+layout: default
+title: Your Name - Resume
+---
+
+<div class="resume-container">
+  <!-- Header Section -->
+  <header class="resume-header">
+    <h1>{{ site.name }}</h1>
+    <div class="contact-info">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <span class="separator">|</span>
+      <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+      <span class="separator">|</span>
+      <a href="{{ site.linkedin }}" target="_blank">LinkedIn</a>
+      <span class="separator">|</span>
+      <a href="{{ site.github }}" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Professional Summary -->
+  <section class="summary">
+    <p>{{ site.summary }}</p>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="section">
+    <h2>Technical Skills</h2>
+    {% for skill in site.technical_skills %}
+    <div class="skill-category">
+      <strong>{{ skill.category }}:</strong> {{ skill.items }}
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- Professional Experience -->
+  <section class="section">
+    <h2>Professional Experience</h2>
+    {% for job in site.experience %}
+    <div class="job">
+      <div class="job-header">
+        <h3>{{ job.title }}</h3>
+        <div class="job-meta">
+          <span class="company">{{ job.company }}</span>
+          <span class="separator">|</span>
+          <span class="location">{{ job.location }}</span>
+          <span class="separator">|</span>
+          <span class="dates">{{ job.dates }}</span>
+        </div>
+      </div>
+      <ul class="achievements">
+        {% for achievement in job.achievements %}
+        <li>{{ achievement }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- Projects -->
+  <section class="section">
+    <h2>Projects</h2>
+    {% for project in site.projects %}
+    <div class="project">
+      <div class="project-header">
+        <strong>{{ project.name }}</strong>
+        {% if project.link %}
+        <span class="separator">|</span>
+        <a href="{{ project.link }}" target="_blank">{{ project.link_text }}</a>
+        {% endif %}
+      </div>
+      <ul class="achievements">
+        {% for detail in project.details %}
+        <li>{{ detail }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <h2>Education</h2>
+    {% for edu in site.education %}
+    <div class="education">
+      <h3>{{ edu.degree }}</h3>
+      <div class="edu-meta">
+        <span class="university">{{ edu.university }}</span>
+        {% if edu.gpa %}
+        <span class="separator">|</span>
+        <span class="gpa">GPA: {{ edu.gpa }}</span>
+        {% endif %}
+        <span class="separator">|</span>
+        <span class="dates">{{ edu.dates }}</span>
+      </div>
+      {% if edu.coursework %}
+      <p class="coursework"><strong>Relevant Coursework:</strong> {{ edu.coursework }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- Certifications -->
+  {% if site.certifications %}
+  <section class="section">
+    <h2>Certifications</h2>
+    <ul class="certifications">
+      {% for cert in site.certifications %}
+      <li>{{ cert }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>
