@@ -1,84 +1,92 @@
 # Site settings
-name: "Your Name"
-email: "email@example.com"
-phone: "+1 (555) 123-4567"
-linkedin: "https://linkedin.com/in/yourprofile"
-github: "https://github.com/yourusername"
+name: "Ravi Nair"
+email: "ixxxxxxn@gmail.com"
+phone: "+61 4xxxxxxxxx"
+linkedin: "https://linkedin.com/in/ivxxxxxxx"
 
 # Professional Summary
-summary: "Senior Software Engineer with 8+ years building scalable cloud infrastructure and backend systems. Specialized in distributed systems, microservices architecture, and DevOps automation. Reduced deployment time by 65% and infrastructure costs by $2M annually through Kubernetes migration and CI/CD pipeline optimization."
+summary: "Principal Cloud Consultant with nearly 20 years of hands-on experience in systems engineering, software development, and infrastructure-as-code. Architected REST APIs, Kubernetes operators, and integration frameworks powering cloud platforms for enterprise clients in financial services, media, and transportation. Unique blend of development and operations expertise ensures delivered solutions are both technically sophisticated and operationally sound"
 
 # Technical Skills
 technical_skills:
   - category: "Languages"
-    items: "Python, JavaScript/TypeScript, Java, Go, SQL"
+    items: " JavaScript/TypeScript, GoLang, Python, Ruby, Shell, Rego"
   - category: "Frameworks & Tools"
-    items: "React, Node.js, Django, Spring Boot, FastAPI, GraphQL"
+    items: "React, VueJS, Metacontroller (K8S), Kubebuilder, FastAPI, OpenAI SDK, CrewAI, ADK"
   - category: "Cloud & DevOps"
-    items: "AWS (EC2, S3, Lambda, RDS), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions"
+    items: "GCP, AWS, Docker, Kubernetes, Terraform, Pulumi, Crossplane, Github Actions"
   - category: "Databases"
-    items: "PostgreSQL, MongoDB, Redis, DynamoDB, Elasticsearch"
+    items: "PostgreSQL, DynamoDB, Firestore, BigQuery"
   - category: "Other"
     items: "Microservices, REST APIs, System Design, Agile/Scrum, Git"
 
 # Professional Experience
 experience:
-  - title: "Senior Software Engineer"
-    company: "Tech Company Name"
-    location: "San Francisco, CA"
-    dates: "Jan 2021 – Present"
+  - title: "Principal Consultant"
+    company: "Sourced Group (acquired by Amdocs)"
+    location: "Melbourne AU"
+    dates: "Feb 2016 - Present"
     achievements:
-      - "Led migration of monolithic application to microservices architecture using Kubernetes and Docker, reducing deployment time from 4 hours to 15 minutes and improving system reliability to 99.9% uptime"
-      - "Architected and built real-time data processing pipeline handling 50M+ events/day using Kafka, Python, and AWS Lambda, reducing data latency from hours to seconds"
-      - "Implemented automated CI/CD pipelines with GitHub Actions and Terraform, enabling 30+ deployments per week while maintaining zero-downtime releases"
-      - "Optimized database queries and implemented Redis caching strategy, reducing API response times by 70% (from 800ms to 240ms) and cutting AWS costs by $2M annually"
-      - "Mentored team of 4 junior engineers through code reviews, technical design sessions, and pair programming, resulting in 50% faster onboarding and 2 promotions"
+      - "Provided expert consulting on enterprise cloud platform projects, designing and implementing security frameworks using Open Policy Agent (OPA) for policy-as-code enforcement"
+      - "Architected cloud control plane frameworks in Python and Go, integrating Crossplane and Terraform for declarative infrastructure management"
+      - "Collaborated with cross-functional teams to deliver solutions aligned with organizational cloud adoption strategies"
+      - "Engineered and maintained multiple custom Kubernetes Operators delivering automated workflows for highly regulated financial services environments"
+      - "Implemented security, governance, and compliance automation codifying industry standards into repeatable, auditable processes"
+      - "Reduced manual intervention and operational toil while increasing consistency across production Kubernetes clusters"
+      - "Designed, developed, and operated scalable managed service platforms for enterprise products including Atlassian suite, Splunk, and Adobe Experience Manager"
+      - "Built multi-tenant architectures enabling efficient service delivery to multiple customers while maintaining security isolation and performance"
+      - "Created automation frameworks using Python, Ruby, and Shell scripting that significantly reduced operational overhead and mean time to recovery (MTTR)"
+      - "Established monitoring, alerting, and self-healing capabilities ensuring high availability and SLA compliance"
 
-  - title: "Software Engineer"
-    company: "Previous Company"
-    location: "Austin, TX"
-    dates: "Jun 2018 – Dec 2020"
+  - title: "Devops/Automation Engineer"
+    company: "NewsCorp"
+    location: "Sydney AU"
+    dates: "Sep 2013 - Feb 2016"
     achievements:
-      - "Built customer-facing dashboard using React and Node.js, serving 100K+ users with 95+ NPS score"
-      - "Developed REST APIs in Python/Django handling 10M+ requests/day with <100ms p99 latency"
-      - "Implemented automated testing suite with 85% code coverage, reducing production bugs by 40%"
-      - "Collaborated with product and design teams in Agile sprints to deliver 15+ features on schedule"
+      - "Developed, maintained and operated the Cloud Platform pipelines leveraging the Atlassian Suite (Bamboo + Stash + JIRA) to instantiate ephemeral cloud environments for several digital assets such as taste.com.au etc."
+      - "Developed several supporting tooling to support the wider cloud platform that leveraged DynamoDB, Lambda, CodeDeploy and associated services in varying languages such as Python, Ruby, Javascript etc."
+      - "Wrote custom bots (using OSS hubot) integrated with Slack for easier monitoring of Cloud services"
+      - "Wrote the open-sourced Consigliere platform (using React/Redis) that collated AWS Trusted Advisor metrics for multiple AWS Accounts (before the advent of AWS Organisations)"
+      - "Operated the Atlassian Suite, and led the migration of the suite to AWS, including all the automation to significantly reduce outage and developer disruption" 
+      - "Various tooling to improve Developer Experience and performance issues related to the Atlassian suite (and associated plugins)"
 
-  - title: "Junior Software Engineer"
-    company: "Startup Name"
-    location: "Remote"
-    dates: "Jan 2017 – May 2018"
+
+
+  - title: "Build & Release Engineer"
+    company: "Blackberry Limited (formerly Research in Motion)"
+    location: "Sydney AU"
+    dates: "Jun 2010 – Sep 2013"
     achievements:
-      - "Developed key features for mobile backend API using Node.js and MongoDB, supporting 50K+ daily active users"
-      - "Built internal analytics dashboard for tracking business KPIs, enabling data-driven product decisions"
-      - "Participated in on-call rotation and resolved production incidents within 2-hour SLA"
+      - "Operated and maintained the build infrastructure and the wider associated tooling such as Electric Commander, Perforce, Gerrit etc."
+      - "Automated several aspects of the release mechanism for BlackberryOS"
+      - "Developed/maintained internal developer portals using Javascript Mootools"
+      - "Developed a BlackBerry 10 app for Build team to look into OS Build issues while on the move, using the Blackberry 10 SDK (C++/QML)"
+      - "Developed Browser Extensions to provide quick overview of OS Builds for Radio Testing teams"
 
-# Projects
-projects:
-  - name: "Open Source Contributor"
-    link: "https://github.com/yourusername/project"
-    link_text: "GitHub"
-    details:
-      - "Core contributor to popular Python web framework with 50K+ GitHub stars"
-      - "Implemented authentication middleware and WebSocket support, merged 12 PRs"
-
-  - name: "Personal Project: Real-Time Chat Application"
-    details:
-      - "Built scalable chat app using React, Node.js, Socket.io, and Redis, deployed on AWS with Docker"
-      - "Supports 1000+ concurrent connections with end-to-end encryption and message persistence"
+  - title: "Systems/Support Engineer"
+    company: "Soprano Design"
+    location: "Sydney AU"
+    dates: "Dec 2007 - Jun 2010"
+    achievements:
+      - "Operated and maintained the in-house developed SMS gateway for several large banks and telcos. The platform was Java based using the Tibco message bus."
+      - "Developed and maintained internal processes for Continuous Integration/Deployment"
+      - "Developed all supporting tooling for release management while removing significant operational overhead"
 
 # Education
 education:
-  - degree: "Bachelor of Science in Computer Science"
-    university: "University Name"
-    gpa: "3.8/4.0"
-    dates: "Graduated May 2016"
-    coursework: "Data Structures & Algorithms, Distributed Systems, Database Design, Machine Learning"
+  - degree: "Masters of Software Engineering"
+    university: "University of Technology, Sydney"
+    dates: "Graduated Nov 2007"
+    coursework: "Software Technologies, Software Quality Process, Software Analysis and Design, Web Technologies, Managing Projects"
+  - degree: "Graduate Diploma in Internetworking"
+    university: "University of Technology, Sydney"
+    dates: "Graduated Nov 2006"
+    coursework: "Advanced Internet Programming, UNIX Shell Programming, LANs & Routing, WANs & VLANs, Contemporary Telecommunication"
+  - degree: "Bachelor of Engineering with Computer Majors"
+    university: "Birla Institute of Technology, India"
+    dates: "Graduated May 2005"
+    coursework: "Digital System Design, Parallel Computing, Pattern Recognition, Artificial Intelligence, Object Oriented Programming"   
 
-# Certifications
-certifications:
-  - "AWS Certified Solutions Architect – Associate"
-  - "Certified Kubernetes Administrator (CKA)"
 
 # Build settings
 markdown: kramdown
